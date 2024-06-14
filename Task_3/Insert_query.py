@@ -14,7 +14,7 @@ insert_query = """
 INSERT INTO students (first_name, last_name, age, grade)
 VALUES (%s, %s, %s, %s);
 """
-student_data = ("adam", "jones", 30, 79)
+student_data = ("Alice", "Smith", 18, 97)
 cursor.execute(insert_query, student_data)
 conn.commit()
 
